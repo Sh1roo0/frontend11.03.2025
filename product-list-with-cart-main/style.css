@@ -1,0 +1,184 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+}
+.container{
+    background-color: rgb(245, 244, 235);
+    display: flex;
+}
+.left{
+    width: 70%;
+    
+
+}
+.right{
+    width: 30%;
+}
+.cart{
+    width: 70%;
+    background-color: white;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+.cart h1{
+    display: flex;
+
+}
+.imgWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 30px auto ;
+}
+.imgWrapper{
+    width: 100%;
+}
+.cart p {
+    text-align: center;
+    position: relative;
+    top: -15px;
+}
+.h1-section{
+    margin: 50px 100px;
+    font-size: 18px;
+}
+.top-text{
+    font-size: 12px;
+    color:hsl(14, 86%, 42%) ;
+}
+.top-text h1{
+    padding: 20px;
+}
+.products{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+article{
+    width: 30%; 
+    margin: 10px;
+    border-radius: 10px;
+}
+.prodIMG img{
+    width: 100%;
+    border-radius: 10px;
+}
+button{
+    display: flex;
+   width: 50%;
+   justify-content: center;
+   border-radius: 30px;
+   background-color: white;
+   border: solid 2px rgb(190, 189, 189);
+   height: 40px;
+   align-items: center;
+   position: relative; 
+   top: -25px;
+   
+}
+button img{
+    margin: 10px;
+}
+.btnS{
+    display: flex;
+    justify-content: center;
+}
+button:hover{
+    background-color: white;
+    color: hsl(14, 86%, 42%);
+    cursor: pointer;
+    transition: 0.3s;
+    border-color:hsl(14, 86%, 42%) ;
+}
+p{
+color: rgb(160, 160, 160);
+
+}
+.text-wrapper h1{
+    font-size: 16px;
+    margin: 5px auto;
+}
+h2{
+    color:hsl(14, 86%, 42%) ;
+    font-size: 16px;
+    margin: 5px auto;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+
+.cart1{ 
+    width: 70%;
+    background-color: white;
+    margin: 50px auto;
+    border-radius: 10px;
+    display: none;
+}
+.cart1 h1{
+    display: flex;
+
+}
+.imgWrapper1{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 30px auto ;
+}
+.imgWrapper1{
+    width: 100%;
+}
+.cart1 p {
+    text-align: center;
+    position: relative;
+    top: -15px;
+}
+@media (max-width: 1000px){
+article{
+    width: 40%;
+}
+}
+@media (max-width: 850px){
+.left{
+    width: 100%
+}
+.right{
+    display: none;  
+}
+.cart1{
+    width: 80%;
+    justify-content: center ;
+    display: flex;
+}
+
+
+}
+@media (max-width: 550px){
+    .products{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    article{
+        width: 100%;
+    }
+    .cart1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
