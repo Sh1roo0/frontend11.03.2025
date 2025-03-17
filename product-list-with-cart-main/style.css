@@ -27,6 +27,8 @@
 }
 .cart h1{
     display: flex;
+    font-size: 30px;
+    margin: 0 -10px;
 
 }
 .imgWrapper{
@@ -37,6 +39,7 @@
 }
 .imgWrapper{
     width: 100%;
+    display: flex;
 }
 .cart p {
     text-align: center;
@@ -74,24 +77,30 @@ button{
    width: 50%;
    justify-content: center;
    border-radius: 30px;
-   background-color: white;
    border: solid 2px rgb(190, 189, 189);
    height: 40px;
    align-items: center;
    position: relative; 
    top: -25px;
-   
+   background-color: white;
 }
+#produkt1{
+    display: flex;
+}
+
 button img{
     margin: 10px;
+    margin-left: 20px;
 }
 .btnS{
     display: flex;
     justify-content: center;
+    
 }
+
 button:hover{
     background-color: white;
-    color: hsl(14, 86%, 42%);
+    color: black;
     cursor: pointer;
     transition: 0.3s;
     border-color:hsl(14, 86%, 42%) ;
@@ -111,8 +120,9 @@ h2{
 }
 h3{
     display: flex;
-    justify-content: center;
-    margin: 30px auto;
+    text-align: left;
+    margin: 20px 20px;
+    color: black;
 }
 
 
@@ -126,6 +136,12 @@ h3{
 .cart1 h1{
     display: flex;
 
+}
+hr{
+    border-color: lightgray;
+}
+.koszyk{
+    margin-top: -50px;
 }
 .imgWrapper1{
     display: flex;
@@ -141,6 +157,54 @@ h3{
     position: relative;
     top: -15px;
 }
+#decrement{
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    border: solid white 1px;
+    padding: 2px;
+    display: none;
+}
+#decrement:hover{
+    background-color: hsl(14, 51%, 62%);
+    cursor: pointer;
+}
+#increment{
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    border: solid white 1px;
+    padding: 2px;
+    display: none;
+}
+#increment:hover{
+    background-color: hsl(14, 51%, 62%);
+    cursor: pointer;
+}
+#incSum{
+    font-size: 15px;
+    color: white;
+    margin-right: 40px;
+}
+#btnTXT{
+    font-weight: normal;
+    font-size: 13px;
+    
+}
+h5{
+    margin: -20px 20px;
+    font-size: 12px;
+}
+h4{
+    margin: 5px 50px;
+    color: rgb(158, 158, 158);
+}
+b{
+    position: relative;
+    margin: -30px 120px;
+    top: -20px;
+}
+
 @media (max-width: 1000px){
 article{
     width: 40%;
