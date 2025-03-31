@@ -35,8 +35,10 @@ const cena9 = 6.50;
     let count1 = 1;
     let koszyk = document.getElementById("koszyk");
     let zamowienie = document.getElementById("zamowienie");
+    let carbon = document.getElementById("carbon");
     const suma = 0;
     let ycart = document.getElementById("ycart");
+    let confirmm = document.getElementById("confirm");
 
     
         
@@ -69,8 +71,11 @@ const cena9 = 6.50;
                 koszyk.innerHTML = `<h3>Waffle with Berries</h3><br> <h5>${count}x</h5>  <h4>@ $${cena1}</h4> <b>$${cena1*count}</b>  <hr>`
                 
 
-                zamowienie.innerHTML = ` Order Total             $${cena1*count} <br>`
+                zamowienie.innerHTML = `<div id='summ'> <span id='ordertotal'>Order Total</span>       <span id='pricesum'>$${cena1*count}</span> </div> <br> `
 
+                carbon.innerHTML = `<div id='carbon1'> <img src="assets/images/icon-carbon-neutral.svg" alt="">  This is a carbon-natural delivery</div>`
+
+                confirmm.innerHTML = `<div id='buttonconfirm'>Confirm order</div>`
                 ycart.innerHTML = ` <h1>Your Cart (${count})</h1> `
                 }
                 else if (count < 0){
@@ -82,6 +87,8 @@ const cena9 = 6.50;
 
                     koszyk.innerHTML = ` `;
                     zamowienie.innerHTML = ` `;
+                    carbon.innerHTML= ` `;
+                    confirmm.innerHTML=``;
                     cartImg.style.display = "flex";
                     p.style.display = "flex";
                     p.style.justifyContent = "center";
